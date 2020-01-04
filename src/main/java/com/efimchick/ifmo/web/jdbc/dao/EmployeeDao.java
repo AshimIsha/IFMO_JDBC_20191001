@@ -10,5 +10,6 @@ public interface EmployeeDao extends Dao<Employee, BigInteger> {
     List<Employee> getByDepartment(Department department);
     List<Employee> getByManager(Employee employee);
 
+    List<Employee> inDepartment(Department department);
 }
 
